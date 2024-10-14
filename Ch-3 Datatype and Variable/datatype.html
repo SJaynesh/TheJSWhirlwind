@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Datatype</title>
+  </head>
+  <body></body>
+
+  <script>
+    /*
+        Datatype : 
+            1) Primitives datatype
+            2) Non-Primitives datatype
+
+        1) Primitives Datatype :
+
+            7 Types of Primitives Datatype In JavaScript
+
+                N = Null
+                N = Number
+                S = Symbol
+                S = String
+                B = Boolean
+                B = Bigint
+                U = Undefined
+    */
+
+    let a = null;
+    let b = 456;
+    let c = true;
+    // let d = BigInt("471");
+    let d = BigInt("471") + BigInt("4");
+    let e = "Jaynesh";
+    // let f = Symbol("Have a Nice Symbol !!");
+    let g = undefined;
+
+    document.write(`<h2>${a}<h2>`);
+    document.write(`<h2>${b}<h2>`);
+    document.write(`<h2>${c}<h2>`);
+    document.write(`<h2>${d}<h2>`);
+    document.write(`<h2>${e}<h2>`);
+    // document.write(`<h2>${f}<h2>`);
+    document.write(`<h2>${g}<h2>`);
+
+    console.log(a, b, c, d, e, g);
+
+    // show the datatype so use typeof keyword
+    document.write(`Type of C : ${typeof e}`);
+  </script>
+</html>

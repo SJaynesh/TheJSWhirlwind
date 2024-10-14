@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Variable</title>
+  </head>
+  <body>
+    <h1>Variable</h1>
+
+    <h3 id="sum"></h3>
+  </body>
+
+  <script>
+    // var Keyword
+    var a = 25;
+    var b = 5;
+
+    var sum = document.getElementById("sum");
+    sum.innerHTML = `${a} + ${b}  = ${a + b}`;
+
+    // let keyword
+    let x = "Jaynesh";
+    let y = "Sarkar";
+
+    document.write(`<br> <h3>${x + " " + y}</h3>`);
+
+    // const object
+    const PI = 3.14;
+    // PI = 3.15;
+
+    document.write(`<br> <h3>PI : ${PI}</h3>`);
+
+    let isTheme = false;
+
+    // isTheme = !isTheme;
+
+    document.write(`<br> <h3>Theme : ${isTheme}</h3>`);
+
+    var p = "Jaynesh";
+
+    {
+      var p = "This";
+      document.write(`<br><h4> Inside Blog : ${p} </h4>`);
+    }
+
+    document.write(`<h4>OutSide Blog : ${p} </h4>`);
+
+    let q = "I am";
+
+    {
+      let q = "You are";
+      document.write(`<br><h4> Inside Blog : ${q} </h4>`);
+    }
+
+    document.write(`<h4>OutSide Blog : ${q} </h4>`);
+  </script>
+</html>
