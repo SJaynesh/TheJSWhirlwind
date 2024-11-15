@@ -30,7 +30,7 @@
     // let d = BigInt("471");
     let d = BigInt("471") + BigInt("4");
     let e = "Jaynesh";
-    // let f = Symbol("Have a Nice Symbol !!");
+    let f = Symbol("Have a Nice Symbol !!");
     let g = undefined;
 
     document.write(`<h2>${a}<h2>`);
@@ -41,9 +41,29 @@
     // document.write(`<h2>${f}<h2>`);
     document.write(`<h2>${g}<h2>`);
 
-    console.log(a, b, c, d, e, g);
+    console.log(a, b, c, d, e, f, g);
 
     // show the datatype so use typeof keyword
     document.write(`Type of C : ${typeof e}`);
+
+    /*
+        2) Non-Primitives datatype
+
+          => Non-Primitives datatype is one types of object (Key-Value Pair Data).
+    */
+    const students = {
+      id: 101,
+      name: "Jaynesh",
+      age: 19,
+      per: 98.12,
+      pass: true,
+    };
+
+    document.write(`<br><hr> <h2> Non-Primitive Datatype (Object)</h2>`);
+    document.write(`<h2>ID : ${students["id"]}</h2>`);
+    document.write(`<h2>NAME : ${students["name"]}</h2>`);
+    document.write(`<h2>AGE : ${students["age"]}</h2>`);
+    document.write(`<h2>PER : ${students["per"]}</h2>`);
+    document.write(`<h2>PASS : ${students.pass}</h2>`);
   </script>
 </html>
