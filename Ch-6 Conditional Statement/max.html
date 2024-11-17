@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maximum Number</title>
+  </head>
+  <body>
+    <h2>Find Maximum Numer</h2>
+  </body>
+  <script>
+    let a = Number.parseInt(prompt("Enter a : "));
+    let b = Number.parseInt(prompt("Enter b : "));
+    let c = Number.parseInt(prompt("Enter c : "));
+
+    if (a > b) {
+      if (a > c) {
+        alert(`${a} is Maximum`);
+      } else {
+        alert(`${c} is Maximum`);
+      }
+    } else {
+      if (b > c) {
+        alert(`${b} is Maximum`);
+      } else {
+        alert(`${c} is Maximum`);
+      }
+    }
+  </script>
+</html>
