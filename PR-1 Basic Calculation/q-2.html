@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Q-2 Swapping</title>
+  </head>
+  <body>
+    <h2>
+      Write a javascript Program to perform a swapping of two
+      variables.(compulsory user input)
+    </h2>
+  </body>
+  <script>
+    let a = Number.parseInt(prompt("Enter first value : "));
+    let b = Number.parseInt(prompt("Enter second value : "));
+
+    document.write("<br><br>");
+    document.write("<h3>Before Swapping</h3>");
+    document.write(`A : ${a}<br>`);
+    document.write(`B : ${b}<br>`);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    // a = a * b;
+    // b = a / b;
+    // a = a / b;
+
+    // a = a ^ b;
+    // b = a ^ b;
+    // a = a ^ b;
+
+    document.write("<br><br>");
+    document.write("<h3>After Swapping</h3>");
+    document.write(`A : ${a}<br>`);
+    document.write(`B : ${b}<br>`);
+  </script>
+</html>

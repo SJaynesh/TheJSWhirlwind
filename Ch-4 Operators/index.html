@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Operator</title>
+  </head>
+  <body></body>
+  <script>
+    let a = 10,
+      b = 5;
+
+    // Increment
+    document.write(`<h2>Increment</h2>`);
+    document.write(`Post Increment : ${a++}<br>`);
+    document.write(`Pre  Increment : ${++a}<br>`);
+
+    // Decrement
+    document.write(`<h2>Decrement</h2>`);
+    document.write(`Post Decrement : ${a--}<br>`);
+    document.write(`Pre  Decrement : ${--a}<br>`);
+
+    // Arithmetic Operator
+    document.write("<h2>Arithmetic Operator</h2>");
+
+    // Addition (+)
+    document.write(`Addition (+) : ${a + b}<br>`);
+
+    // Subtraction (-)
+    document.write(`Subtraction (-) : ${a - b}<br>`);
+
+    // Multiplication (*)
+    document.write(`Multiplication (*) : ${a * b}<br>`);
+
+    // Division (/)
+    document.write(`Division (/) : ${a / b}<br>`);
+
+    // Modulus (%)
+    document.write(`Modulus (%) : ${a % b}<br>`);
+
+    // Exponentiation (**)
+    document.write(`Exponentiation (**) : ${a ** b}<br>`);
+
+    document.write("<h2>Assignment Operator</h2>");
+
+    a += 10;
+    document.write(`A : ${a}<br>`);
+
+    a -= 10;
+    document.write(`A : ${a}<br>`);
+
+    a *= 10;
+    document.write(`A : ${a}<br>`);
+
+    a /= 10;
+    document.write(`A : ${a}<br>`);
+
+    a %= 10;
+    document.write(`A : ${a}<br>`);
+
+    // Compatison || Conditional Operator
+    document.write("<h2>Compatison || Conditional Operator</h2>");
+    document.write(`== : ${10 == 10}<br>`);
+    document.write(`!= : ${10 != 10}<br>`);
+    document.write(`=== : ${10 === "10"}<br>`);
+    document.write(`!== : ${10 !== "10"}<br>`);
+    document.write(`> : ${10 > 5}<br>`);
+    document.write(`< : ${10 < 5}<br>`);
+    document.write(`>= : ${10 >= 10}<br>`);
+    document.write(`<= : ${10 <= 10}<br>`);
+
+    // Logical Operator
+    document.write("<h2>Logical Operator</h2>");
+    document.write(`&& : ${10 >= 5 && 22 <= 56}<br>`);
+    document.write(`|| : ${10 >= 5 || 22 >= 56}<br>`);
+    document.write(`! : ${!true}<br>`);
+  </script>
+</html>

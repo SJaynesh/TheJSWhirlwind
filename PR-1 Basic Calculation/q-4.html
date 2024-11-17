@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Q-4 Gross Salary</title>
+  </head>
+  <body>
+    <h2>
+      Write a javascript Program to find gross salary.(compulsory user input)
+    </h2>
+  </body>
+  <script>
+    let baseSalary = Number.parseInt(prompt("Enter Base Salary:"));
+    const HRA = Number.parseInt(prompt("Enter HRA:"));
+    const DA = Number.parseInt(prompt("Enter DA:"));
+    const TA = Number.parseInt(prompt("Enter TA:"));
+
+    let grossSalary =
+      (baseSalary * HRA) / 100 +
+      (baseSalary * DA) / 100 +
+      (baseSalary * TA) / 100;
+
+    document.write("<br><br>");
+    document.write(`Gross Salary: ${baseSalary + grossSalary}`);
+  </script>
+</html>
