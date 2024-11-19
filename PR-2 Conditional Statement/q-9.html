@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maximum Number</title>
+  </head>
+  <body>
+    <h2>Write a JavaScript program to find max of 5 number using nested if.</h2>
+  </body>
+  <script>
+    let a = Number.parseInt(prompt("Enter a : "));
+    let b = Number.parseInt(prompt("Enter b : "));
+    let c = Number.parseInt(prompt("Enter c : "));
+    let d = Number.parseInt(prompt("Enter d : "));
+    let e = Number.parseInt(prompt("Enter d : "));
+
+    if (a > b) {
+      if (a > c) {
+        if (a > d) {
+          if (a > e) {
+            alert(`${a} is Maximum`);
+          } else {
+            alert(`${a} is Maximum`);
+          }
+        } else {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        }
+      } else {
+        if (c > d) {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        } else {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        }
+      }
+    } else {
+      if (b > c) {
+        if (b > d) {
+          if (b > e) {
+            alert(`${b} is Maximum`);
+          } else {
+            alert(`${a} is Maximum`);
+          }
+        } else {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        }
+      } else {
+        if (c > d) {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        } else {
+          if (d > e) {
+            alert(`${d} is Maximum`);
+          } else {
+            alert(`${e} is Maximum`);
+          }
+        }
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maximum Number</title>
+  </head>
+  <body>
+    <h2>
+      Write a JavaScript program to find which number is greter in 4 numbers
+      using ladder if else.
+    </h2>
+  </body>
+  <script>
+    let a = Number.parseInt(prompt("Enter a : "));
+    let b = Number.parseInt(prompt("Enter b : "));
+    let c = Number.parseInt(prompt("Enter c : "));
+    let d = Number.parseInt(prompt("Enter d : "));
+
+    if (a == b && a == c && a == d && b == c && b == d && c == d) {
+      alert("All are Equal");
+    } else if (a == b || a == c || a == d || b == c || b == d || c == d) {
+      alert("Both are Equal");
+    } else {
+      if (a > b) {
+        if (a > c) {
+          if (a > d) {
+            alert(`${a} is Maximum`);
+          } else {
+            alert(`${d} is Maximum`);
+          }
+        } else {
+          if (c > d) {
+            alert(`${c} is Maximum`);
+          } else {
+            alert(`${d} is Maximum`);
+          }
+        }
+      } else {
+        if (b > c) {
+          if (b > d) {
+            alert(`${b} is Maximum`);
+          } else {
+            alert(`${d} is Maximum`);
+          }
+        } else {
+          if (c > d) {
+            alert(`${c} is Maximum`);
+          } else {
+            alert(`${d} is Maximum`);
+          }
+        }
+      }
+    }
+  </script>
+</html>

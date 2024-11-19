@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find Grade</title>
+  </head>
+  <body>
+    <h2>
+      Write a JavaScript program to input marks of five subjects Physics,
+      Chemistry, Biology, Mathematics and Computer. Calculate percentage and
+      grade according to following
+    </h2>
+  </body>
+  <script>
+    let pm = Number.parseInt(prompt("Enter your Physics marks : "));
+    let cm = Number.parseInt(prompt("Enter your Chemistry marks : "));
+    let bm = Number.parseInt(prompt("Enter your Biology marks : "));
+    let mm = Number.parseInt(prompt("Enter your Mathematics marks : "));
+    let Cm = Number.parseInt(prompt("Enter your Computer marks : "));
+
+    let num = (pm + cm + bm + mm + Cm) / 5;
+
+    if (num >= 91 && num <= 100) {
+      alert("Your Grade is A+");
+    } else if (num >= 81 && num <= 90) {
+      alert("Your Grade is A");
+    } else if (num >= 71 && num <= 80) {
+      alert("Your Grade is B+");
+    } else if (num >= 61 && num <= 70) {
+      alert("Your Grade is B");
+    } else if (num >= 51 && num <= 60) {
+      alert("Your Grade is C+");
+    } else if (num >= 41 && num <= 50) {
+      alert("Your Grade is C");
+    } else if (num >= 33 && num <= 40) {
+      alert("Your Grade is D");
+    } else {
+      alert("Sorry !! You are Fail..");
+    }
+  </script>
+</html>
