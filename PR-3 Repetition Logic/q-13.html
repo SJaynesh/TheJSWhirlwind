@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>For Loop</title>
+  </head>
+  <body>
+    <h2>
+      Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…)
+    </h2>
+  </body>
+
+  <script>
+    let n = Number.parseInt(prompt("Enter any number : "));
+    let a = 0,
+      b = 1,
+      c;
+
+    document.write(`${a} &nbsp ${b} &nbsp`);
+    for (let i = 1; i <= n; i++) {
+      c = a + b;
+      document.write(`${c} &nbsp`);
+      a = b;
+      b = c;
+    }
+  </script>
+</html>

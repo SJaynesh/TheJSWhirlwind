@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Print odd 1 to n</title>
+  </head>
+  <body>
+    <h2>
+      Write javascript program to print 1 to n and number find odd number using
+      do while loop .
+    </h2>
+  </body>
+  <script>
+    let i = 1;
+    let n = Number.parseInt(prompt("Enter any number  :"));
+
+    do {
+      if (i % 2 != 0) {
+        document.write(`${i} &nbsp`);
+      }
+      // document.write(`${i} <br>`);
+      i++;
+    } while (i <= n);
+  </script>
+</html>
