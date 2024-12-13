@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UDF</title>
+  </head>
+  <body>
+    <h2>
+      Write a javascript Program to perform a swapping of two variables.(all
+      function use)
+    </h2>
+  </body>
+
+  <script>
+    const swap = () => {
+      a = a + b;
+      b = a - b;
+      a = a - b;
+    };
+
+    let a = Number.parseInt(prompt("Enter a : "));
+    let b = Number.parseInt(prompt("Enter b : "));
+
+    document.write("<h2> Before Swapping </h2>");
+    document.write(`A : ${a} <br>`);
+    document.write(`B : ${b}`);
+
+    swap();
+
+    document.write("<br><h2> After Swapping </h2>");
+    document.write(`A : ${a} <br>`);
+    document.write(`B : ${b}`);
+  </script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UDF</title>
+  </head>
+  <body>
+    <h2>
+      Write a JavaScript program to add two number of addition, subtraction,
+      multiplication, division (using simple function)
+    </h2>
+  </body>
+
+  <script>
+    const addition = (a, b) => a + b;
+    const subtraction = (a, b) => a - b;
+    const multiplication = (a, b) => a * b;
+    const division = (a, b) => a / b;
+    const modulo = (a, b) => a % b;
+
+    let n = Number.parseInt(prompt("Enter any number : "));
+
+    switch (n) {
+      case 1:
+        let a = Number.parseInt(prompt("Enter first value : "));
+        let b = Number.parseInt(prompt("Enter second value : "));
+
+        let ans = addition(a, b);
+        document.write(`ADDITION : ${ans}`);
+        break;
+      case 2:
+        a = Number.parseInt(prompt("Enter first value : "));
+        b = Number.parseInt(prompt("Enter second value : "));
+
+        document.write(`SUBTRACTION : ${subtraction(a, b)}`);
+        break;
+      case 3:
+        a = Number.parseInt(prompt("Enter first value : "));
+        b = Number.parseInt(prompt("Enter second value : "));
+
+        document.write(`MULTIPLICATION : ${multiplication(a, b)}`);
+        break;
+      case 4:
+        a = Number.parseInt(prompt("Enter first value : "));
+        b = Number.parseInt(prompt("Enter second value : "));
+
+        document.write(`DIVISION : ${division(a, b)}`);
+        break;
+      case 5:
+        a = Number.parseInt(prompt("Enter first value : "));
+        b = Number.parseInt(prompt("Enter second value : "));
+
+        document.write(`MODULO : ${modulo(a, b)}`);
+        break;
+      default:
+        document.write(`Invalid value`);
+    }
+  </script>
+</html>

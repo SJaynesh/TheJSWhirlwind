@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UDF</title>
+  </head>
+  <body>
+    <h2>
+      Write a JavaScript program to find which number is greter in 4 numbers
+      using ledder if else. (using no return with parameter function)
+    </h2>
+  </body>
+
+  <script>
+    let a = Number.parseInt(prompt("Enter a : "));
+    let b = Number.parseInt(prompt("Enter b : "));
+    let c = Number.parseInt(prompt("Enter c : "));
+    let d = Number.parseInt(prompt("Enter d : "));
+
+    greterNumber(a, b, c, d);
+
+    function greterNumber(a, b, c, d) {
+      if (a > b && a > c && a > d) {
+        document.write(`${a} is greter number`);
+      } else if (b > a && b > c && b > d) {
+        document.write(`${b} is greter number`);
+      } else if (c > a && c > b && c > d) {
+        document.write(`${c} is greter number`);
+      } else {
+        document.write(`${d} is greter number`);
+      }
+    }
+  </script>
+</html>
